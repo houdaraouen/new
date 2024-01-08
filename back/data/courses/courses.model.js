@@ -6,3 +6,4 @@ const CoursesSchema = new mongoose.Schema({
 });
 const Courses = mongoose.model("Courses", CoursesSchema);
 module.exports = Courses;
+

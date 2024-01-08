@@ -5,14 +5,15 @@ const SECRET_KEY = process.env.SECRET_KEY;
 
 
 const UserSchema = new mongoose.Schema({
-  fullName: String,
+  firstName: String,
+  lastName: String,
   email: {
     type: String,
     required: true,
     unique: true
   },
   password: String,
-  role: String
+
 });
 
 

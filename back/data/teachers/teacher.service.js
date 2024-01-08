@@ -35,6 +35,7 @@ const deleteById = async (id) => {  // Delete Teacher by ID
 };
 const create = async (data) => {
     try {
+        console.log(data);
       const newTeacher = new Teacher(data);
       const savedTeacher = await newTeacher.save();
       return { Teacher: savedTeacher};

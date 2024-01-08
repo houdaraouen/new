@@ -51,6 +51,7 @@ const deleteTeacherById = async (req, res) => {
 
     const CreateTeacher = async (req, res) => {
         try {
+            console.log(req.body);
           const { Teacher } = await create(req.body);
           res.json({ Teacher });
         } catch (error) {
